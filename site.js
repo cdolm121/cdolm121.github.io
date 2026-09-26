@@ -2,7 +2,11 @@
 (function () {
   const link = document.getElementById('control-link');
   const hint = document.getElementById('hint');
-  const RAW = 'https://raw.githubusercontent.com/cdolm121/cdolm121.github.io/main/config.js';
+  const SOURCES = [
+    './config.js',
+    'https://cdn.jsdelivr.net/gh/cdolm121/cdolm121.github.io@main/config.js',
+    'https://raw.githubusercontent.com/cdolm121/cdolm121.github.io/main/config.js',
+  ];
 
   function validControl(value) {
     const url = new URL(value);
@@ -21,68 +25,73 @@
   }
 
   function parseConfig(text) {
-    const match = text.match(/"controlUrl"\s*:\s*"([^"]+)"/);
-    if (!match) throw new Error('missing controlUrl');
-    return validControl(match[1]);
+    const urlMatch = text.match(/"controlUrl"\s*:\s*"([^"]+)"/);
+    if (!urlMatch) throw new Error('missing controlUrl');
+    const updatedMatch = text.match(/"updatedAt"\s*:\s*(\d+)/);
+    return {
+      href: validControl(urlMatch[1]),
+      updatedAt: updatedMatch ? Number(updatedMatch[1]) : 0,
+    };
   }
 
   function loadScript(src) {
     return new Promise(function (resolve, reject) {
-      const previous = window.PUBLIC_SITE;
-      window.PUBLIC_SITE = undefined;
+      const marker = '__publicSiteProbe_' + Math.random().toString(36).slice(2);
       const script = document.createElement('script');
       script.src = src;
       script.async = true;
       script.onload = function () {
         try {
           if (!window.PUBLIC_SITE || !window.PUBLIC_SITE.controlUrl) throw new Error('empty');
-          resolve(validControl(window.PUBLIC_SITE.controlUrl));
+          resolve({
+            href: validControl(window.PUBLIC_SITE.controlUrl),
+            updatedAt: Number(window.PUBLIC_SITE.updatedAt || 0),
+          });
         } catch (error) {
           reject(error);
         } finally {
           script.remove();
-          if (previous) window.PUBLIC_SITE = previous;
         }
       };
       script.onerror = function () {
         script.remove();
-        if (previous) window.PUBLIC_SITE = previous;
         reject(new Error('load failed'));
       };
       document.head.appendChild(script);
     });
   }
 
-  async function fetchText(url) {
+  async function fetchConfig(url) {
     const response = await fetch(url, { cache: 'no-store', credentials: 'omit' });
     if (!response.ok) throw new Error('http ' + response.status);
-    return response.text();
+    return parseConfig(await response.text());
   }
 
   async function loadLatest() {
     const bust = Date.now();
-    const errors = [];
-    // Prefer raw GitHub (usually fresher than Pages CDN), then local Pages file.
-    const attempts = [
-      function () { return fetchText(RAW + '?t=' + bust).then(parseConfig); },
-      function () { return loadScript('./config.js?t=' + bust); },
-      function () {
-        if (window.PUBLIC_SITE && window.PUBLIC_SITE.controlUrl) {
-          return Promise.resolve(validControl(window.PUBLIC_SITE.controlUrl));
-        }
-        return Promise.reject(new Error('no embedded config'));
-      },
-    ];
-    for (let i = 0; i < attempts.length; i++) {
-      try {
-        const href = await attempts[i]();
-        apply(href);
-        return href;
-      } catch (error) {
-        errors.push(error);
+    const jobs = SOURCES.map(function (base) {
+      const url = base + (base.indexOf('?') >= 0 ? '&' : '?') + 't=' + bust;
+      if (base.indexOf('://') === -1) {
+        // Same-origin: script tag is enough and avoids MIME quirks.
+        return loadScript(url);
       }
+      return fetchConfig(url).catch(function () { return loadScript(url); });
+    });
+    if (window.PUBLIC_SITE && window.PUBLIC_SITE.controlUrl) {
+      jobs.push(Promise.resolve({
+        href: validControl(window.PUBLIC_SITE.controlUrl),
+        updatedAt: Number(window.PUBLIC_SITE.updatedAt || 0),
+      }));
     }
-    throw errors[errors.length - 1] || new Error('unavailable');
+    const results = await Promise.allSettled(jobs);
+    let best = null;
+    results.forEach(function (result) {
+      if (result.status !== 'fulfilled') return;
+      if (!best || result.value.updatedAt >= best.updatedAt) best = result.value;
+    });
+    if (!best) throw new Error('unavailable');
+    apply(best.href);
+    return best.href;
   }
 
   async function refresh(showWait) {
@@ -104,9 +113,8 @@
         refresh(tries < 3).then(function (done) {
           if (done || tries >= 24) clearInterval(timer);
         });
-      }, 4000);
+      }, 3000);
     }
   });
-  // Keep beating CDN lag after Pinggy rotates.
-  setInterval(function () { refresh(false); }, 20000);
+  setInterval(function () { refresh(false); }, 15000);
 })();
