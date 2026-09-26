@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://lvbox-42-200-231-151.free.pinggy.net", "updatedAt": 1790445626};
+window.PUBLIC_SITE = {"controlUrl": "https://fwqrt-203-198-38-241.free.pinggy.net", "updatedAt": 1790446575};
