@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://moore-declaration-interfaces-logo.trycloudflare.com"};
+window.PUBLIC_SITE = {"controlUrl": "https://lanka-diagnostic-buffalo-should.trycloudflare.com"};
