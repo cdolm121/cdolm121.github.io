@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://ribyg-42-200-231-151.free.pinggy.net", "updatedAt": 1790476497};
+window.PUBLIC_SITE = {"controlUrl": "https://isfvt-203-198-38-241.free.pinggy.net", "updatedAt": 1790476704};
