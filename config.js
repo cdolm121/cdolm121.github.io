@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://wiring-legends-images-download.trycloudflare.com", "updatedAt": 1790477263};
+window.PUBLIC_SITE = {"controlUrl": "https://cookie-stages-durham-twins.trycloudflare.com", "updatedAt": 1790523257};
