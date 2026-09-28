@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://cookie-stages-durham-twins.trycloudflare.com", "updatedAt": 1790523257};
+window.PUBLIC_SITE = {"controlUrl": "https://ktpan-203-10-99-26.free.pinggy.net", "updatedAt": 1790600284};
