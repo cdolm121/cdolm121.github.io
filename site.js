@@ -2,11 +2,17 @@
 (function () {
   const link = document.getElementById('control-link');
   const hint = document.getElementById('hint');
-  const SOURCES = [
-    './config.js',
-    'https://cdn.jsdelivr.net/gh/cdolm121/cdolm121.github.io@main/config.js',
-    'https://raw.githubusercontent.com/cdolm121/cdolm121.github.io/main/config.js',
-  ];
+  const REPO = 'cdolm121/cdolm121.github.io';
+  // Pages and raw.githubusercontent are CDN-cached for minutes; the contents API is
+  // current within seconds of a push but allows only 60 requests/hour per IP.
+  const CACHED_SOURCES = ['./config.js', 'https://raw.githubusercontent.com/' + REPO + '/main/config.js'];
+  const API_SOURCE = 'https://api.github.com/repos/' + REPO + '/contents/config.js?ref=main';
+  const API_MIN_GAP = 20000;
+  const STORE = 'publicSite.latest';
+  const params = new URLSearchParams(location.search);
+  const goMode = params.get('go') === '1';
+  const deadHost = (params.get('from') || '').toLowerCase();
+  let best = null, lastFresh = 0, redirecting = false;
 
   function validControl(value) {
     const url = new URL(value);
@@ -16,105 +22,96 @@
     return url.href.replace(/\/$/, '');
   }
 
-  function apply(href) {
-    link.href = href;
-    link.setAttribute('aria-disabled', 'false');
-    link.textContent = '打开控制台 ↗';
-    link.rel = 'noopener noreferrer';
-    hint.textContent = '进入后使用远程访问口令登录。';
-  }
-
   function parseConfig(text) {
     const urlMatch = text.match(/"controlUrl"\s*:\s*"([^"]+)"/);
     if (!urlMatch) throw new Error('missing controlUrl');
     const updatedMatch = text.match(/"updatedAt"\s*:\s*(\d+)/);
-    return {
-      href: validControl(urlMatch[1]),
-      updatedAt: updatedMatch ? Number(updatedMatch[1]) : 0,
-    };
+    return { href: validControl(urlMatch[1]), updatedAt: updatedMatch ? Number(updatedMatch[1]) : 0 };
   }
 
-  function loadScript(src) {
-    return new Promise(function (resolve, reject) {
-      const marker = '__publicSiteProbe_' + Math.random().toString(36).slice(2);
-      const script = document.createElement('script');
-      script.src = src;
-      script.async = true;
-      script.onload = function () {
-        try {
-          if (!window.PUBLIC_SITE || !window.PUBLIC_SITE.controlUrl) throw new Error('empty');
-          resolve({
-            href: validControl(window.PUBLIC_SITE.controlUrl),
-            updatedAt: Number(window.PUBLIC_SITE.updatedAt || 0),
-          });
-        } catch (error) {
-          reject(error);
-        } finally {
-          script.remove();
-        }
-      };
-      script.onerror = function () {
-        script.remove();
-        reject(new Error('load failed'));
-      };
-      document.head.appendChild(script);
+  function remember(candidate) {
+    if (!candidate || (best && candidate.updatedAt < best.updatedAt)) return;
+    best = candidate;
+    try { localStorage.setItem(STORE, JSON.stringify(best)); } catch (_) {}
+    link.href = best.href;
+    link.setAttribute('aria-disabled', 'false');
+    link.textContent = '打开控制台 ↗';
+    link.rel = 'noopener noreferrer';
+    if (!goMode) hint.textContent = '进入后使用远程访问口令登录。';
+  }
+
+  function withBust(url) {
+    return url + (url.indexOf('?') >= 0 ? '&' : '?') + 't=' + Date.now();
+  }
+
+  async function fetchText(url, headers) {
+    const response = await fetch(withBust(url), {
+      cache: 'no-store', credentials: 'omit', headers: headers || {}, signal: AbortSignal.timeout(8000),
     });
-  }
-
-  async function fetchConfig(url) {
-    const response = await fetch(url, { cache: 'no-store', credentials: 'omit' });
     if (!response.ok) throw new Error('http ' + response.status);
-    return parseConfig(await response.text());
+    return response.text();
   }
 
-  async function loadLatest() {
-    const bust = Date.now();
-    const jobs = SOURCES.map(function (base) {
-      const url = base + (base.indexOf('?') >= 0 ? '&' : '?') + 't=' + bust;
-      if (base.indexOf('://') === -1) {
-        // Same-origin: script tag is enough and avoids MIME quirks.
-        return loadScript(url);
-      }
-      return fetchConfig(url).catch(function () { return loadScript(url); });
-    });
-    if (window.PUBLIC_SITE && window.PUBLIC_SITE.controlUrl) {
-      jobs.push(Promise.resolve({
-        href: validControl(window.PUBLIC_SITE.controlUrl),
-        updatedAt: Number(window.PUBLIC_SITE.updatedAt || 0),
-      }));
+  function apiAllowed() {
+    let last = 0;
+    try { last = Number(localStorage.getItem(STORE + '.api') || 0); } catch (_) {}
+    if (Date.now() - last < API_MIN_GAP) return false;
+    try { localStorage.setItem(STORE + '.api', String(Date.now())); } catch (_) {}
+    return true;
+  }
+
+  async function loadLatest(useApi) {
+    const jobs = CACHED_SOURCES.map(function (url) { return fetchText(url).then(parseConfig); });
+    if (useApi && apiAllowed()) {
+      jobs.push(fetchText(API_SOURCE, { Accept: 'application/vnd.github.raw' }).then(parseConfig));
     }
     const results = await Promise.allSettled(jobs);
-    let best = null;
+    let found = false;
     results.forEach(function (result) {
-      if (result.status !== 'fulfilled') return;
-      if (!best || result.value.updatedAt >= best.updatedAt) best = result.value;
+      if (result.status === 'fulfilled') { remember(result.value); found = true; }
     });
-    if (!best) throw new Error('unavailable');
-    apply(best.href);
-    return best.href;
+    if (!found) throw new Error('unavailable');
+    lastFresh = Date.now();
   }
 
-  async function refresh(showWait) {
-    if (showWait) hint.textContent = '正在获取最新控制地址…';
-    try {
-      await loadLatest();
-      return true;
-    } catch (_) {
-      if (showWait) hint.textContent = '控制地址更新中，正在自动重试…';
-      return false;
-    }
+  function isDead(href) {
+    try { return Boolean(deadHost) && new URL(href).host.toLowerCase() === deadHost; } catch (_) { return true; }
   }
 
-  refresh(true).then(function (ok) {
-    if (!ok) {
-      let tries = 0;
-      const timer = setInterval(function () {
-        tries += 1;
-        refresh(tries < 3).then(function (done) {
-          if (done || tries >= 24) clearInterval(timer);
-        });
-      }, 3000);
+  function maybeRedirect() {
+    if (!goMode || redirecting || !best) return;
+    if (isDead(best.href)) {
+      hint.textContent = '控制地址正在更换，稍后自动进入…';
+      return;
     }
+    redirecting = true;
+    hint.textContent = '正在进入最新控制地址…';
+    location.replace(best.href + '/');
+  }
+
+  async function refresh(useApi) {
+    try { await loadLatest(useApi); } catch (_) {
+      if (!best) hint.textContent = '控制地址获取中，正在自动重试…';
+    }
+    maybeRedirect();
+  }
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORE) || 'null');
+    if (saved && saved.href) remember({ href: validControl(saved.href), updatedAt: Number(saved.updatedAt || 0) });
+  } catch (_) {}
+  if (goMode) hint.textContent = '正在查找最新控制地址…';
+
+  // A click always goes to the address confirmed within the last half minute.
+  link.addEventListener('click', function (event) {
+    if (Date.now() - lastFresh < 30000 && best) return;
+    event.preventDefault();
+    hint.textContent = '正在确认最新地址…';
+    refresh(true).then(function () { if (best) location.href = best.href + '/'; });
   });
-  setInterval(function () { refresh(false); }, 15000);
+
+  refresh(true);
+  setInterval(function () { refresh(goMode); }, goMode ? 5000 : 15000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh(true); });
+  window.addEventListener('pageshow', function (event) { if (event.persisted) refresh(true); });
 })();
