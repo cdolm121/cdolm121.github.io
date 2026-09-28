@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://ktpan-203-10-99-26.free.pinggy.net", "updatedAt": 1790600284};
+window.PUBLIC_SITE = {"controlUrl": "https://bd1ea92.r8.cpolar.cn", "updatedAt": 1790603401};
