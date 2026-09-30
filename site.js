@@ -23,16 +23,29 @@
   }
 
   function parseConfig(text) {
-    const urlMatch = text.match(/"controlUrl"\s*:\s*"([^"]+)"/);
+    const offline = /"offline"\s*:\s*true/.test(text);
+    const urlMatch = text.match(/"controlUrl"\s*:\s*"([^"]*)"/);
     if (!urlMatch) throw new Error('missing controlUrl');
     const updatedMatch = text.match(/"updatedAt"\s*:\s*(\d+)/);
-    return { href: validControl(urlMatch[1]), updatedAt: updatedMatch ? Number(updatedMatch[1]) : 0 };
+    const updatedAt = updatedMatch ? Number(updatedMatch[1]) : 0;
+    if (!urlMatch[1]) {
+      if (offline) return { href: '', offline: true, updatedAt: updatedAt };
+      throw new Error('missing controlUrl');
+    }
+    return { href: validControl(urlMatch[1]), offline: false, updatedAt: updatedAt };
   }
 
   function remember(candidate) {
     if (!candidate || (best && candidate.updatedAt < best.updatedAt)) return;
     best = candidate;
     try { localStorage.setItem(STORE, JSON.stringify(best)); } catch (_) {}
+    if (best.offline) {
+      link.removeAttribute('href');
+      link.setAttribute('aria-disabled', 'true');
+      link.textContent = '暂时离线';
+      hint.textContent = '控制台暂时离线，Mac 正在自动恢复连接，稍后刷新即可。';
+      return;
+    }
     link.href = best.href;
     link.setAttribute('aria-disabled', 'false');
     link.textContent = '打开控制台 ↗';
@@ -80,6 +93,10 @@
 
   function maybeRedirect() {
     if (!goMode || redirecting || !best) return;
+    if (best.offline) {
+      hint.textContent = '控制台暂时离线，恢复后自动进入…';
+      return;
+    }
     if (isDead(best.href)) {
       hint.textContent = '控制地址正在更换，稍后自动进入…';
       return;
@@ -104,10 +121,16 @@
 
   // A click always goes to the address confirmed within the last half minute.
   link.addEventListener('click', function (event) {
+    if (best && best.offline) {
+      event.preventDefault();
+      hint.textContent = '控制台暂时离线，正在确认恢复状态…';
+      refresh(true);
+      return;
+    }
     if (Date.now() - lastFresh < 30000 && best) return;
     event.preventDefault();
     hint.textContent = '正在确认最新地址…';
-    refresh(true).then(function () { if (best) location.href = best.href + '/'; });
+    refresh(true).then(function () { if (best && !best.offline) location.href = best.href + '/'; });
   });
 
   refresh(true);
