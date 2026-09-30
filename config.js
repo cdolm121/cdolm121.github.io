@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://ckpqo-203-10-99-34.free.pinggy.net", "updatedAt": 1790778809};
+window.PUBLIC_SITE = {"controlUrl": "https://gqgif-203-10-99-34.run.pinggy-free.link", "updatedAt": 1790778889};
