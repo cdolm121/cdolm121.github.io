@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://uyrzi-203-10-99-10.free.pinggy.net", "updatedAt": 1790911310};
+window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1790911947};
