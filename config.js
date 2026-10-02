@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://zaqzt-203-10-99-26.run.pinggy-free.link", "updatedAt": 1790957679};
+window.PUBLIC_SITE = {"controlUrl": "", "offline": true, "updatedAt": 1790958256};
