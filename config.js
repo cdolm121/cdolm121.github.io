@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://meyja-211-20-18-216.free.pinggy.net", "updatedAt": 1790930590};
+window.PUBLIC_SITE = {"controlUrl": "https://204744ce.r8.cpolar.cn", "updatedAt": 1790930627};
