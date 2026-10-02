@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://sogam-211-20-18-216.free.pinggy.net", "updatedAt": 1790931191};
+window.PUBLIC_SITE = {"controlUrl": "https://409fbd84.r8.cpolar.cn", "updatedAt": 1790931275};
