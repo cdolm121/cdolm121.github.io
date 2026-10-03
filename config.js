@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://address-guidelines-boat-cope.trycloudflare.com", "updatedAt": 1791046744};
+window.PUBLIC_SITE = {"controlUrl": "https://guidance-impose-laboratories-seminar.trycloudflare.com", "updatedAt": 1791047881};
