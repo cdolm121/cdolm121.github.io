@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://interpretation-higher-isolation-tcp.trycloudflare.com", "updatedAt": 1791056452};
+window.PUBLIC_SITE = {"controlUrl": "https://tune-preference-islands-space.trycloudflare.com", "updatedAt": 1791057193};
