@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://fountain-brain-basics-striking.trycloudflare.com", "updatedAt": 1791039988};
+window.PUBLIC_SITE = {"controlUrl": "https://contests-guards-sets-changing.trycloudflare.com", "updatedAt": 1791040530};
