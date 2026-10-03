@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://basics-patient-ages-mumbai.trycloudflare.com", "updatedAt": 1791054893};
+window.PUBLIC_SITE = {"controlUrl": "https://periodic-obtained-seriously-mainly.trycloudflare.com", "updatedAt": 1791055363};
