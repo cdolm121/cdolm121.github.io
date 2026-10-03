@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://utc-conviction-forestry-fence.trycloudflare.com", "updatedAt": 1791053353};
+window.PUBLIC_SITE = {"controlUrl": "https://outsourcing-handling-alias-lauren.trycloudflare.com", "updatedAt": 1791054231};
