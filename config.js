@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://testimonials-treo-reservation-remains.trycloudflare.com", "updatedAt": 1791012539};
+window.PUBLIC_SITE = {"controlUrl": "https://jvc-short-curious-finals.trycloudflare.com", "updatedAt": 1791016932};
