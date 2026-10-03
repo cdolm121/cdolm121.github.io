@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://legendary-ruling-inform-origins.trycloudflare.com", "updatedAt": 1791041468};
+window.PUBLIC_SITE = {"controlUrl": "https://features-stanford-employees-products.trycloudflare.com", "updatedAt": 1791041857};
