@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://contests-guards-sets-changing.trycloudflare.com", "updatedAt": 1791040530};
+window.PUBLIC_SITE = {"controlUrl": "https://potter-explaining-consideration-seemed.trycloudflare.com", "updatedAt": 1791041061};
