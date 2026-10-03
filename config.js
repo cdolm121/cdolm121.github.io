@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://cook-paying-strip-highest.trycloudflare.com", "updatedAt": 1791043385};
+window.PUBLIC_SITE = {"controlUrl": "https://wholesale-thumbnail-heritage-calendar.trycloudflare.com", "updatedAt": 1791044330};
