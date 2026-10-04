@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://distinct-ons-winning-thermal.trycloudflare.com", "updatedAt": 1791074178};
+window.PUBLIC_SITE = {"controlUrl": "https://liable-mod-rouge-rep.trycloudflare.com", "updatedAt": 1791074536};
