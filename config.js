@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://properly-exhibits-flyer-prediction.trycloudflare.com", "updatedAt": 1791103167};
+window.PUBLIC_SITE = {"controlUrl": "https://bird-reasonably-full-act.trycloudflare.com", "updatedAt": 1791104119};
