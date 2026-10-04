@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://excellence-nobody-lows-affects.trycloudflare.com", "updatedAt": 1791110074};
+window.PUBLIC_SITE = {"controlUrl": "https://pros-commit-twins-bedroom.trycloudflare.com", "updatedAt": 1791110557};
