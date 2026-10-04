@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://bird-reasonably-full-act.trycloudflare.com", "updatedAt": 1791104119};
+window.PUBLIC_SITE = {"controlUrl": "https://helicopter-newcastle-locally-aspects.trycloudflare.com", "updatedAt": 1791106265};
