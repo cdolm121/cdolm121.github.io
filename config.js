@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://syracuse-convertible-behalf-hits.trycloudflare.com", "updatedAt": 1791101768};
+window.PUBLIC_SITE = {"controlUrl": "https://properly-exhibits-flyer-prediction.trycloudflare.com", "updatedAt": 1791103167};
