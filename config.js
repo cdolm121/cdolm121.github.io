@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://fundamental-selected-magnificent-learned.trycloudflare.com", "updatedAt": 1791086371};
+window.PUBLIC_SITE = {"controlUrl": "https://answer-according-principles-pathology.trycloudflare.com", "updatedAt": 1791086835};
