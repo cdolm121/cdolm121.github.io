@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://trigger-sci-onto-diamond.trycloudflare.com", "updatedAt": 1791112577};
+window.PUBLIC_SITE = {"controlUrl": "https://nat-jackson-dozens-carter.trycloudflare.com", "updatedAt": 1791113323};
