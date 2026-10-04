@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://movements-authentication-calling-search.trycloudflare.com", "updatedAt": 1791114185};
+window.PUBLIC_SITE = {"controlUrl": "https://contain-land-identified-medical.trycloudflare.com", "updatedAt": 1791115342};
