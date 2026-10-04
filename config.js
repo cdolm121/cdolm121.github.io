@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://nat-jackson-dozens-carter.trycloudflare.com", "updatedAt": 1791113323};
+window.PUBLIC_SITE = {"controlUrl": "https://movements-authentication-calling-search.trycloudflare.com", "updatedAt": 1791114185};
