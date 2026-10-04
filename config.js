@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://pda-answering-project-celebrities.trycloudflare.com", "updatedAt": 1791127765};
+window.PUBLIC_SITE = {"controlUrl": "https://success-infrared-those-herbal.trycloudflare.com", "updatedAt": 1791128442};
