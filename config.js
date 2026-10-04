@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://tune-preference-islands-space.trycloudflare.com", "updatedAt": 1791057193};
+window.PUBLIC_SITE = {"controlUrl": "https://distinct-ons-winning-thermal.trycloudflare.com", "updatedAt": 1791074178};
