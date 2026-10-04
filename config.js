@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://analysts-recordings-agricultural-gsm.trycloudflare.com", "updatedAt": 1791115774};
+window.PUBLIC_SITE = {"controlUrl": "https://specifications-forty-boss-pcs.trycloudflare.com", "updatedAt": 1791096775};
