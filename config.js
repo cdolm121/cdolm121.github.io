@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://clothes-wilderness-varied-ambient.trycloudflare.com", "updatedAt": 1791099946};
+window.PUBLIC_SITE = {"controlUrl": "https://syracuse-convertible-behalf-hits.trycloudflare.com", "updatedAt": 1791101768};
