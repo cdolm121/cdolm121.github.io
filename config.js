@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://chances-ash-bob-chuck.trycloudflare.com", "updatedAt": 1791085122};
+window.PUBLIC_SITE = {"controlUrl": "https://medieval-sparc-batman-occupation.trycloudflare.com", "updatedAt": 1791085917};
