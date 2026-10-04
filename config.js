@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://specifications-forty-boss-pcs.trycloudflare.com", "updatedAt": 1791096775};
+window.PUBLIC_SITE = {"controlUrl": "https://pda-answering-project-celebrities.trycloudflare.com", "updatedAt": 1791127765};
