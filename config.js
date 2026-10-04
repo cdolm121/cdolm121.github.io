@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://medieval-sparc-batman-occupation.trycloudflare.com", "updatedAt": 1791085917};
+window.PUBLIC_SITE = {"controlUrl": "https://fundamental-selected-magnificent-learned.trycloudflare.com", "updatedAt": 1791086371};
