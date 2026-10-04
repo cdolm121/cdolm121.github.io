@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://texts-consent-handles-magazine.trycloudflare.com", "updatedAt": 1791087429};
+window.PUBLIC_SITE = {"controlUrl": "https://housewives-willing-cia-grammar.trycloudflare.com", "updatedAt": 1791091413};
