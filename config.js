@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://instructional-amendments-nominated-bouquet.trycloudflare.com", "updatedAt": 1791209523};
+window.PUBLIC_SITE = {"controlUrl": "https://addressed-introduce-point-hay.trycloudflare.com", "updatedAt": 1791209987};
