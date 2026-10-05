@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://consortium-taxation-strikes-harvest.trycloudflare.com", "updatedAt": 1791130608};
+window.PUBLIC_SITE = {"controlUrl": "https://thoroughly-parks-clouds-quantity.trycloudflare.com", "updatedAt": 1791163335};
