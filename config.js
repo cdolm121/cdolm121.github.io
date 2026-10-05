@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://hundreds-ethical-playback-knee.trycloudflare.com", "updatedAt": 1791164914};
+window.PUBLIC_SITE = {"controlUrl": "https://competition-immediately-cardiff-yoga.trycloudflare.com", "updatedAt": 1791165396};
