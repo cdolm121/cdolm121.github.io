@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://addressed-introduce-point-hay.trycloudflare.com", "updatedAt": 1791209987};
+window.PUBLIC_SITE = {"controlUrl": "https://principles-taught-red-pepper.trycloudflare.com", "updatedAt": 1791211754};
