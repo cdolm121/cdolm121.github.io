@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://thoroughly-parks-clouds-quantity.trycloudflare.com", "updatedAt": 1791163335};
+window.PUBLIC_SITE = {"controlUrl": "https://hundreds-ethical-playback-knee.trycloudflare.com", "updatedAt": 1791164914};
