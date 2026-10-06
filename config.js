@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://basically-connections-align-acknowledge.trycloudflare.com", "updatedAt": 1791301988};
+window.PUBLIC_SITE = {"controlUrl": "https://favorites-globe-safari-theology.trycloudflare.com", "updatedAt": 1791302221};
