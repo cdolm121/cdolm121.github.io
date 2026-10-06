@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://favorites-globe-safari-theology.trycloudflare.com", "updatedAt": 1791302221};
+window.PUBLIC_SITE = {"controlUrl": "https://starter-transition-assets-because.trycloudflare.com", "updatedAt": 1791303625};
