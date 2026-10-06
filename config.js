@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://another-basics-diabetes-herb.trycloudflare.com", "updatedAt": 1791215121};
+window.PUBLIC_SITE = {"controlUrl": "https://jvc-moms-clock-sales.trycloudflare.com", "updatedAt": 1791253516};
