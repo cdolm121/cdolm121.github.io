@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://handling-prison-planning-daniel.trycloudflare.com", "updatedAt": 1791258220};
+window.PUBLIC_SITE = {"controlUrl": "https://tee-anybody-continues-impaired.trycloudflare.com", "updatedAt": 1791258574};
