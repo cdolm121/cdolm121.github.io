@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://headphones-surfing-extension-ultra.trycloudflare.com", "updatedAt": 1791262197};
+window.PUBLIC_SITE = {"controlUrl": "https://stud-martial-follows-claire.trycloudflare.com", "updatedAt": 1791262839};
