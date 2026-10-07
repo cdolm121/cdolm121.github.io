@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://dvds-pix-consultants-democrats.trycloudflare.com", "updatedAt": 1791341074};
+window.PUBLIC_SITE = {"controlUrl": "https://kinda-gallery-chapter-lakes.trycloudflare.com", "updatedAt": 1791345558};
