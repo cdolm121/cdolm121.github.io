@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://pre-preventing-weed-highest.trycloudflare.com", "updatedAt": 1791380053};
+window.PUBLIC_SITE = {"controlUrl": "https://situation-arrange-restored-trek.trycloudflare.com", "updatedAt": 1791419897};
