@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://merit-ranging-soldier-korea.trycloudflare.com", "updatedAt": 1791427207};
+window.PUBLIC_SITE = {"controlUrl": "https://regulated-processors-delivery-introduced.trycloudflare.com", "updatedAt": 1791558781};
