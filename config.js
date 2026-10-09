@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://regulated-processors-delivery-introduced.trycloudflare.com", "updatedAt": 1791558781};
+window.PUBLIC_SITE = {"controlUrl": "https://characterization-groove-democrat-vegetarian.trycloudflare.com", "updatedAt": 1791561343};
