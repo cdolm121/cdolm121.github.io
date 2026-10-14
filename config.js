@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://kennedy-editorial-downloaded-orders.trycloudflare.com", "updatedAt": 1791992559};
+window.PUBLIC_SITE = {"controlUrl": "https://blocking-shall-reflect-members.trycloudflare.com", "updatedAt": 1791992982};
