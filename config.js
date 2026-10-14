@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://hopefully-blocking-nancy-primarily.trycloudflare.com", "updatedAt": 1791993121};
+window.PUBLIC_SITE = {"controlUrl": "https://tuition-chicken-language-themselves.trycloudflare.com", "updatedAt": 1791995193};
