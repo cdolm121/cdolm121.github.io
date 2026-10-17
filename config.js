@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://gas-scripting-masters-prominent.trycloudflare.com", "updatedAt": 1792250893};
+window.PUBLIC_SITE = {"controlUrl": "https://orleans-got-built-apr.trycloudflare.com", "updatedAt": 1792251735};
