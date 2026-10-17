@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://bills-destiny-drain-chip.trycloudflare.com", "updatedAt": 1792250080};
+window.PUBLIC_SITE = {"controlUrl": "https://gas-scripting-masters-prominent.trycloudflare.com", "updatedAt": 1792250893};
