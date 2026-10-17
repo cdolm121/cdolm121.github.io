@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://gis-reflect-standard-supplies.trycloudflare.com", "updatedAt": 1792252437};
+window.PUBLIC_SITE = {"controlUrl": "https://society-lexington-hydrogen-specially.trycloudflare.com", "updatedAt": 1792257628};
