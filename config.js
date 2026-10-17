@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://kingston-cycling-cordless-reid.trycloudflare.com", "updatedAt": 1792248866};
+window.PUBLIC_SITE = {"controlUrl": "https://bills-destiny-drain-chip.trycloudflare.com", "updatedAt": 1792250080};
