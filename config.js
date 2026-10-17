@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://tuition-chicken-language-themselves.trycloudflare.com", "updatedAt": 1791995193};
+window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1792248854};
