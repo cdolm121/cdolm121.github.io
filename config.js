@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://mel-optimum-consultants-rack.trycloudflare.com", "updatedAt": 1792320357};
+window.PUBLIC_SITE = {"controlUrl": "https://cell-metal-white-florida.trycloudflare.com", "updatedAt": 1792320583};
