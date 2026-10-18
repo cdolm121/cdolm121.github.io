@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://bowling-insights-distant-compilation.trycloudflare.com", "updatedAt": 1792321651};
+window.PUBLIC_SITE = {"controlUrl": "https://trailers-pill-activists-coral.trycloudflare.com", "updatedAt": 1792330969};
