@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://society-lexington-hydrogen-specially.trycloudflare.com", "updatedAt": 1792257628};
+window.PUBLIC_SITE = {"controlUrl": "https://strengthening-passing-email-testimonials.trycloudflare.com", "updatedAt": 1792293980};
