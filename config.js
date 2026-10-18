@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://screensaver-cookies-rack-strengthen.trycloudflare.com", "updatedAt": 1792332722};
+window.PUBLIC_SITE = {"controlUrl": "https://synthesis-comics-developments-gregory.trycloudflare.com", "updatedAt": 1792339569};
