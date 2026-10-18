@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://synthesis-comics-developments-gregory.trycloudflare.com", "updatedAt": 1792339569};
+window.PUBLIC_SITE = {"controlUrl": "https://arabic-troops-mentioned-supplies.trycloudflare.com", "updatedAt": 1792345463};
