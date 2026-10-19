@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://5324f03e.r7.cpolar.cn", "updatedAt": 1792368229};
+window.PUBLIC_SITE = {"controlUrl": "https://pastor-mandate-stranger-suits.trycloudflare.com", "updatedAt": 1792369440};
