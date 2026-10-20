@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://endless-patents-promise-bags.trycloudflare.com", "updatedAt": 1792473348};
+window.PUBLIC_SITE = {"controlUrl": "https://interviews-run-santa-video.trycloudflare.com", "updatedAt": 1792502707};
