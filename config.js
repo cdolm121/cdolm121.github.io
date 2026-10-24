@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://tongue-edwards-plugins-supplements.trycloudflare.com", "updatedAt": 1792847989};
+window.PUBLIC_SITE = {"controlUrl": "https://hours-horses-conscious-ruth.trycloudflare.com", "updatedAt": 1792861952};
