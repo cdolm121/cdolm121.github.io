@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://document-mercy-machinery-overview.trycloudflare.com", "updatedAt": 1792944779};
+window.PUBLIC_SITE = {"controlUrl": "https://improving-docs-purposes-hon.trycloudflare.com", "updatedAt": 1792990395};
