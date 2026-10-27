@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://portrait-democratic-mediterranean-hitting.trycloudflare.com", "updatedAt": 1793031553};
+window.PUBLIC_SITE = {"controlUrl": "https://spokesman-providence-titans-tattoo.trycloudflare.com", "updatedAt": 1793119860};
