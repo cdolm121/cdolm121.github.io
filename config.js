@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://spokesman-providence-titans-tattoo.trycloudflare.com", "updatedAt": 1793119860};
+window.PUBLIC_SITE = {"controlUrl": "https://organize-reynolds-quote-print.trycloudflare.com", "updatedAt": 1793262529};
