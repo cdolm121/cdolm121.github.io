@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://internship-forward-group-session.trycloudflare.com", "updatedAt": 1793328559};
+window.PUBLIC_SITE = {"controlUrl": "https://donors-fashion-dsl-istanbul.trycloudflare.com", "updatedAt": 1793418206};
