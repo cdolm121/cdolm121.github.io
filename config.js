@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://structured-advertiser-maintaining-nutritional.trycloudflare.com", "updatedAt": 1793450493};
+window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1793458873};
