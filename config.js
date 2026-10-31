@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1793458873};
+window.PUBLIC_SITE = {"controlUrl": "https://60472d37.r7.cpolar.cn", "updatedAt": 1793458917};
