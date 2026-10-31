@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://turtle-throwing-usually-fully.trycloudflare.com", "updatedAt": 1793426935};
+window.PUBLIC_SITE = {"controlUrl": "https://structured-advertiser-maintaining-nutritional.trycloudflare.com", "updatedAt": 1793450493};
