@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://fiction-relevance-ram-escape.trycloudflare.com", "updatedAt": 1793637734};
+window.PUBLIC_SITE = {"controlUrl": "https://machinery-examines-brush-computer.trycloudflare.com", "updatedAt": 1793640550};
