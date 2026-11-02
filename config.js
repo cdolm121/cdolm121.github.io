@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://sao-designed-int-emerald.trycloudflare.com", "updatedAt": 1793625919};
+window.PUBLIC_SITE = {"controlUrl": "https://radius-perfect-foundation-kitty.trycloudflare.com", "updatedAt": 1793627536};
