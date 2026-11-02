@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://colored-need-yet-restore.trycloudflare.com", "updatedAt": 1793627775};
+window.PUBLIC_SITE = {"controlUrl": "https://fiction-relevance-ram-escape.trycloudflare.com", "updatedAt": 1793637734};
