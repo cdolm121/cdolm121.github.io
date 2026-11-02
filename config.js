@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://radius-perfect-foundation-kitty.trycloudflare.com", "updatedAt": 1793627536};
+window.PUBLIC_SITE = {"controlUrl": "https://colored-need-yet-restore.trycloudflare.com", "updatedAt": 1793627775};
