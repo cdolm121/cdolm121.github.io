@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://appears-lovely-withdrawal-front.trycloudflare.com", "updatedAt": 1793459524};
+window.PUBLIC_SITE = {"controlUrl": "https://anytime-consequently-practitioners-beans.trycloudflare.com", "updatedAt": 1793602402};
