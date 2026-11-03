@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://arnold-reducing-coupons-membership.trycloudflare.com", "updatedAt": 1793687807};
+window.PUBLIC_SITE = {"controlUrl": "https://children-timeline-oriental-interaction.trycloudflare.com", "updatedAt": 1793691374};
