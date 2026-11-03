@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://cons-mechanical-pontiac-trades.trycloudflare.com", "updatedAt": 1793642602};
+window.PUBLIC_SITE = {"controlUrl": "https://adaptation-warning-xhtml-biological.trycloudflare.com", "updatedAt": 1793682541};
