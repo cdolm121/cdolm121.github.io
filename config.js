@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://children-timeline-oriental-interaction.trycloudflare.com", "updatedAt": 1793691374};
+window.PUBLIC_SITE = {"controlUrl": "https://brook-reflections-working-considering.trycloudflare.com", "updatedAt": 1793713441};
