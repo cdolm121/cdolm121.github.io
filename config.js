@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://climbing-guitar-trustee-layout.trycloudflare.com", "updatedAt": 1793726285};
+window.PUBLIC_SITE = {"controlUrl": "https://optimum-compilation-boutique-boom.trycloudflare.com", "updatedAt": 1793726760};
