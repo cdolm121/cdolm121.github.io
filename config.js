@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://accompanying-axis-geek-presenting.trycloudflare.com", "updatedAt": 1793686032};
+window.PUBLIC_SITE = {"controlUrl": "https://arnold-reducing-coupons-membership.trycloudflare.com", "updatedAt": 1793687807};
