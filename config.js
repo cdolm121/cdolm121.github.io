@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://continued-archived-offering-image.trycloudflare.com", "updatedAt": 1793723556};
+window.PUBLIC_SITE = {"controlUrl": "https://buying-purpose-kennedy-trip.trycloudflare.com", "updatedAt": 1793723871};
