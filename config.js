@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://roles-exposed-looking-partnership.trycloudflare.com", "updatedAt": 1793753309};
+window.PUBLIC_SITE = {"controlUrl": "https://plc-pieces-incredible-turbo.trycloudflare.com", "updatedAt": 1793756126};
