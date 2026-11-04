@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://selective-crystal-consistently-objects.trycloudflare.com", "updatedAt": 1793759955};
+window.PUBLIC_SITE = {"controlUrl": "https://ultimately-plots-march-labs.trycloudflare.com", "updatedAt": 1793797940};
