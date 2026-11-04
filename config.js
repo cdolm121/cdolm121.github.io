@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://ultimately-plots-march-labs.trycloudflare.com", "updatedAt": 1793797940};
+window.PUBLIC_SITE = {"controlUrl": "https://agriculture-shakira-ensuring-birmingham.trycloudflare.com", "updatedAt": 1793802022};
