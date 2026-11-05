@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://otherwise-donor-resumes-forestry.trycloudflare.com", "updatedAt": 1793841000};
+window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1793841102};
