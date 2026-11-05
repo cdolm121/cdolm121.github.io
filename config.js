@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://maine-dos-ads-font.trycloudflare.com", "updatedAt": 1793852461};
+window.PUBLIC_SITE = {"controlUrl": "https://adopt-coalition-minister-design.trycloudflare.com", "updatedAt": 1793853348};
