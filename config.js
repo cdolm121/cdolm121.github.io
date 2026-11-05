@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://adopt-coalition-minister-design.trycloudflare.com", "updatedAt": 1793853348};
+window.PUBLIC_SITE = {"controlUrl": "https://inclusive-pvc-ferrari-appearing.trycloudflare.com", "updatedAt": 1793855373};
