@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://broadway-welding-novelty-employed.trycloudflare.com", "updatedAt": 1793846737};
+window.PUBLIC_SITE = {"controlUrl": "https://maine-dos-ads-font.trycloudflare.com", "updatedAt": 1793852461};
