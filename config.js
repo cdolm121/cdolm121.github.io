@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://inclusive-pvc-ferrari-appearing.trycloudflare.com", "updatedAt": 1793855373};
+window.PUBLIC_SITE = {"controlUrl": "https://66b5f9a6.r7.cpolar.cn", "updatedAt": 1793905449};
