@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://halo-request-prospect-serve.trycloudflare.com", "updatedAt": 1793810456};
+window.PUBLIC_SITE = {"controlUrl": "https://api.trycloudflare.com", "updatedAt": 1793840988};
