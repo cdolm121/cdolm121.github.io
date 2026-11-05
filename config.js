@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://phase-roommates-empty-generations.trycloudflare.com", "updatedAt": 1793841114};
+window.PUBLIC_SITE = {"controlUrl": "https://broadway-welding-novelty-employed.trycloudflare.com", "updatedAt": 1793846737};
