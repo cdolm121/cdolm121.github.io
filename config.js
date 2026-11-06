@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://genealogy-flows-performs-dad.trycloudflare.com", "updatedAt": 1793906068};
+window.PUBLIC_SITE = {"controlUrl": "https://download-restrictions-ratio-throughout.trycloudflare.com", "updatedAt": 1793995018};
