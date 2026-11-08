@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "", "offline": true, "updatedAt": 1794023070};
+window.PUBLIC_SITE = {"controlUrl": "https://zmpwn-171-213-186-67.free.pinggy.net", "updatedAt": 1794127248};
