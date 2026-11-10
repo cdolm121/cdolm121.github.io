@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://qgcot-171-222-187-101.free.pinggy.net", "updatedAt": 1794324802};
+window.PUBLIC_SITE = {"controlUrl": "", "offline": true, "updatedAt": 1794325074};
