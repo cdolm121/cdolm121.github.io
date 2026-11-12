@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://kjsda-171-222-187-101.free.pinggy.net", "updatedAt": 1794477283};
+window.PUBLIC_SITE = {"controlUrl": "https://izmxl-171-222-187-101.free.pinggy.net", "updatedAt": 1794480286};
