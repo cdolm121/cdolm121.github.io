@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://myxav-171-222-187-101.free.pinggy.net", "updatedAt": 1794675829};
+window.PUBLIC_SITE = {"controlUrl": "https://ipipm-171-222-187-101.free.pinggy.net", "updatedAt": 1794678925};
