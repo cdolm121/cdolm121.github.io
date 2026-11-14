@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://kcifp-171-222-187-101.free.pinggy.net", "updatedAt": 1794658564};
+window.PUBLIC_SITE = {"controlUrl": "https://toecj-171-222-187-101.run.pinggy-free.link", "updatedAt": 1794658744};
