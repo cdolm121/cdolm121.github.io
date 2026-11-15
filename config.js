@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://odqau-171-222-187-101.free.pinggy.net", "updatedAt": 1794727583};
+window.PUBLIC_SITE = {"controlUrl": "https://ojqve-171-222-187-101.free.pinggy.net", "updatedAt": 1794730587};
