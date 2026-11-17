@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://txocf-171-213-186-78.free.pinggy.net", "updatedAt": 1794937848};
+window.PUBLIC_SITE = {"controlUrl": "https://7a525a80.r7.cpolar.cn", "updatedAt": 1794938264};
