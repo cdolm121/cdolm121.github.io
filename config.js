@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "", "offline": true, "updatedAt": 1795032969};
+window.PUBLIC_SITE = {"controlUrl": "https://77197768.r7.cpolar.cn", "updatedAt": 1795032987};
