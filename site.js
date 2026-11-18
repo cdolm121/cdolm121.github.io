@@ -78,13 +78,31 @@
     if (useApi && apiAllowed()) {
       jobs.push(fetchText(API_SOURCE, { Accept: 'application/vnd.github.raw' }).then(parseConfig));
     }
-    const results = await Promise.allSettled(jobs);
+    // 只等最快成功的那一个来源。raw.githubusercontent 在国内经常挂住，
+    // 等齐三个来源会把「点按钮进控制台」拖慢 8 秒以上（每个来源 8 秒超时）。
+    // 其余来源照常在后台完成，结果也照常记录（可能更新）。
     let found = false;
-    results.forEach(function (result) {
-      if (result.status === 'fulfilled') { remember(result.value); found = true; }
+    const NEVER = new Promise(function () {});
+    const successes = [];
+    const tracked = jobs.map(function (job) {
+      const settled = job.then(function (value) {
+        remember(value);
+        found = true;
+        lastFresh = Date.now();
+        return value;
+      }, function () { return null; });
+      successes.push(settled.then(function (value) {
+        return value ? { ok: true } : NEVER;
+      }));
+      return settled;
     });
+    const giveUp = new Promise(function (resolve) {
+      setTimeout(function () { resolve({ ok: false }); }, 9000);
+    });
+    const first = await Promise.race(successes.concat([giveUp]));
+    if (first.ok) return;
+    await Promise.all(tracked);
     if (!found) throw new Error('unavailable');
-    lastFresh = Date.now();
   }
 
   function isDead(href) {
