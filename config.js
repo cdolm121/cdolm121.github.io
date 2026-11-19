@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://dvd-photos-mba-ferry.trycloudflare.com", "updatedAt": 1795086248};
+window.PUBLIC_SITE = {"controlUrl": "", "offline": true, "updatedAt": 1795090150};
