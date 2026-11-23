@@ -1,1 +1,1 @@
-window.PUBLIC_SITE = {"controlUrl": "https://53da8790.r7.cpolar.cn", "updatedAt": 1795246891};
+window.PUBLIC_SITE = {"controlUrl": "https://78d462f4.r7.cpolar.cn", "updatedAt": 1795470637};
